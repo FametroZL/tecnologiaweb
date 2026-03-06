@@ -1,6 +1,6 @@
 # Repositório: TecnologiaWeb
 
-Bem-vindos! Este é o repositório oficial da disciplina de **Tecnologia Web**, ministrada pelo professor Alex Sandro Souza.
+Bem-vindos! Este é o repositório oficial da disciplina de **Tecnologia Web**, ministrada pelo Prof. Alexsander Souza.
 
 Aqui, vocês deverão enviar os seus portfólios desenvolvidos com **HTML** e **CSS**.
 
@@ -53,4 +53,4 @@ Quer aprender como desenvolvedores profissionais trabalham em equipe? Siga este 
 O professor irá analisar e aceitar (fazer o *Merge*) do seu portfólio para este repositório oficial!
 
 ---
-*Professor Alex Sandro Souza*
+*Prof. Alexsander Souza*
