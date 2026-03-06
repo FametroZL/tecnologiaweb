@@ -24,7 +24,7 @@ Como você já faz parte da organização, a dinâmica de envio simplificou! Sig
 
 #### Método A: Pelo Navegador (Mais fácil)
 
-1. Acesse este repositório: [https://github.com/alexsandsouza/TecnologiaWeb](https://github.com/alexsandsouza/TecnologiaWeb)
+1. Acesse este repositório: [https://github.com/FametroZL/TecnologiaWeb](https://github.com/FametroZL/TecnologiaWeb)
 2. Clique no botão **"Add file"** (Adicionar arquivo) e depois em **"Create new file"** (Criar novo arquivo), para que você consiga criar a sua pasta.
 3. No campo de nome do arquivo ("Name your file..."), digite o seu nome e sobrenome, tudo minúsculo e separado por traço, seguido por uma barra de espaço. (Exemplo: digite `joao-silva/`). 
    *Note que ao digitar a barra `/`, o GitHub automaticamente criará a sua pasta.*
@@ -44,7 +44,7 @@ Quer se desafiar e enviar o seu código pelo terminal (Git Bash)? Siga este cami
 
 1. Abra o terminal no seu computador e faça o clone deste repositório oficial:
    ```bash
-   git clone https://github.com/alexsandsouza/TecnologiaWeb.git
+   git clone https://github.com/FametroZL/TecnologiaWeb.git
    ```
 2. Abra a pasta baixada no seu editor de código (VS Code, etc). Crie dentro dela a sua pasta pessoal com seu nome e sobrenome (ex: `joao-silva`).
 3. Coloque os seus arquivos do projeto (`index.html`, `style.css`, etc.) dentro desta sua nova pasta.
