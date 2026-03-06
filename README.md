@@ -15,42 +15,43 @@ Antes de enviar, certifique-se de que os seus arquivos estão organizados.
 - Crie uma pasta com o seu nome e sobrenome, tudo minúsculo e separado por traço. (Exemplo: `joao-silva`)
 - Dentro dessa pasta, coloque o seu arquivo `index.html`, seu arquivo de estilos `.css` (ex: `style.css`), e uma pasta `img` (ou `images`) contendo as imagens do seu projeto, caso existam.
 
-### 2. Enviando o seu Portfólio pelo GitHub (Navegador)
+### 2. Enviando o seu Portfólio (Fork + Pull Request)
 
-A forma mais simples de enviar seu trabalho, caso você seja um iniciante, é fazer o upload diretamente por aqui:
+Para garantir a organização e aprender como o mercado de trabalho funciona, vocês irão enviar o portfólio usando a dinâmica de **Fork** e **Pull Request**. Você pode fazer isso diretamente pelo navegador ou pelo terminal.
+
+#### Método A: Pelo Navegador (Mais fácil)
 
 1. Acesse este repositório: [https://github.com/alexsandsouza/TecnologiaWeb](https://github.com/alexsandsouza/TecnologiaWeb)
-2. No botão **"Add file"** (Adicionar arquivo) localizado na parte superior dos arquivos, clique em **"Upload files"** (Fazer upload de arquivos).
-3. **Arraste a pasta inteira com o seu nome** (ex: `joao-silva`) do seu computador para a tela do GitHub. 
-   > Você também pode clicar em "choose your files" para selecionar os arquivos, mas arrastar a pasta manterá a organização correta!
-4. Após o carregamento dos arquivos, role a tela para baixo até a seção **"Commit changes"**.
-5. No campo de título, escreva uma mensagem clara informando de quem é o envio. (Exemplo: *Enviando o portfólio do João Silva*).
-6. Por fim, clique no botão verde **"Commit changes"**.
+2. No canto superior direito desta página, clique no botão **"Fork"** (um botão com um ícone de bifurcação) para criar uma cópia deste repositório na sua conta. Na janela que abrir, basta clicar no botão verde **"Create fork"**.
+3. Agora você foi redirecionado para o *seu* repositório (ex: `https://github.com/SEU_USUARIO/TecnologiaWeb`). É na sua cópia que você vai fazer o upload!
+4. Clique no botão **"Add file"** (Adicionar arquivo) > **"Upload files"** (Fazer upload de arquivos).
+5. **Arraste a pasta inteira com o seu nome** (ex: `joao-silva`) para a área pontilhada na tela, para fazer o upload.
+6. Role a tela para baixo até a seção *Commit changes*, escreva uma mensagem como "Enviando portfólio de João Silva" e clique no botão verde **"Commit changes"**.
+7. Após o GitHub finalizar o processo e você voltar à tela inicial do seu projeto, encontre e clique no link **"Contribute"** (Contribuir) logo abaixo do botão verde "<> Code", e depois clique em **"Open pull request"**.
+8. Na nova página que abrir, clique primeiro no botão verde **"Create pull request"**, preencha o título informando o seu nome, e por fim clique novamente em **"Create pull request"**.
 
-🎉 Pronto! Seu portfólio já foi enviado para ser avaliado.
+🎉 Pronto! O professor receberá o seu pedido, irá analisar o seu código e aprovar a inclusão no repositório oficial da turma.
 
 ---
 
-### 🚀 Desafio: Enviando via Git e Pull Request (Avançado/Mercado de Trabalho)
+#### Método B: Usando Git no Terminal (Desafio de Mercado)
 
-Quer aprender como desenvolvedores profissionais trabalham em equipe? Siga este caminho:
+Quer se desafiar e enviar o seu código pelo terminal (Git Bash)? Siga este caminho:
 
-1. Clique no botão **"Fork"** no canto superior direito desta tela para criar uma cópia deste repositório no seu perfil do GitHub.
-2. Abra o terminal (Git Bash ou outro) e clone o *seu* fork:
+1. Clique no botão **"Fork"** no canto superior direito desta tela (na página do professor) para criar a sua cópia.
+2. Abra o terminal no seu computador e faça o clone do *seu* fork:
    ```bash
-   git clone https://github.com/SEU-USUARIO/TecnologiaWeb.git
+   git clone https://github.com/SEU_USUARIO/TecnologiaWeb.git
    ```
-3. Crie a sua pasta (ex: `joao-silva`) e coloque os arquivos do projeto dentro dela.
-4. Adicione as mudanças, faça o commit e o push:
+3. Abra a pasta baixada no seu editor de código (VS Code, etc). Crie dentro dela a sua pasta pessoal (ex: `joao-silva`) e coloque os seus arquivos do projeto dentro.
+4. Adicione as mudanças, crie o commit e envie de volta para o GitHub:
    ```bash
    git add .
    git commit -m "feat: adiciona portfólio de João Silva"
    git push origin main
    ```
-5. Volte à página do seu repositório no GitHub, clique em **"Contribute"** (Contribuir) e depois em **"Open Pull Request"**.
-6. Preencha os detalhes e clique em **"Create pull request"**.
-
-O professor irá analisar e aceitar (fazer o *Merge*) do seu portfólio para este repositório oficial!
+5. Volte para a página do SEU repositório no GitHub, clique no link **"Contribute"** (Contribuir) > **"Open Pull Request"**.
+6. Preencha os detalhes informando seu envio e clique no botão verde **"Create pull request"**.
 
 ---
 *Prof. Alexsander Souza*
