@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio — Bruno Lieberth</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- ==================== CABEÇALHO ==================== -->
+
+    <header>
+      <div class="header-container">
+        <img src="img/foto-perfil.jpg" alt="Foto de Bruno" width="100" />
+        <div class="header-texto">
+          <h1>Bruno Lieberth dos Santos Lima</h1>
+          <p><em>Estudante de Sistemas de Informação — CEUNI FAMETRO</em></p>
+        </div>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#sobre">Sobre Mim</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#formacao">Formação</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ==================== CONTEÚDO PRINCIPAL ==================== -->
+    <main>
+      <!-- Seção: Sobre Mim -->
+      <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>
+          Olá! Sou <strong>Bruno Lieberth</strong>, estudante de Sistemas de
+          Informação. Tenho interesse em desenvolvimento web e criação de
+          soluções digitais.
+        </p>
+        <p>
+          Cursando o <strong>5° período</strong> na CEUNI FAMETRO, Manaus-AM,
+          desenvolvendo meu primeiro portfólio em <em>Tecnologia Web I</em>.
+        </p>
+
+        <h3>Minhas Habilidades</h3>
+        <ul>
+          <li>HTML5 e CSS3</li>
+          <li>Lógica de Programação</li>
+          <li>Git e GitHub</li>
+          <li>Java</li>
+          <li>C e C++</li>
+          <li>JavaScript</li>
+        </ul>
+
+        <h3>Formação Acadêmica</h3>
+        <ol>
+          <li>
+            Ensino Médio — Escola Estadual Presidente Castelo Branco, 2023
+          </li>
+          <li>
+            Graduação em Sistemas de Informação - CEUNI FAMETRO (em andamento)
+          </li>
+        </ol>
+
+          <h3>Cursos e certificações</h3>
+
+          <ol>
+          <li>
+            Assistente administrativo e Relações humanas, 2023
+          </li>
+          <li>
+            Informatica básica e avançada, 2023
+          </li>
+        </ol>
+        
+      </section>
+
+      <!-- Seção: Projetos -->
+      <section id="projetos">
+        <h2>Projetos</h2>
+
+        <article class="card-projeto">
+          <img
+            src="img/projeto1.jpg"
+            alt="Screenshot do Projeto 1"
+            width="300"
+          />
+          <h3>Nome do Projeto 1</h3>
+          <p>Descrição breve das tecnologias e objetivo do projeto.</p>
+          <a
+            href="https://github.com/seu-usuario/projeto1"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Ver no GitHub</a
+          >
+        </article>
+
+        <article class="card-projeto">
+          <img
+            src="img/projeto2.jpg"
+            alt="Screenshot do Projeto 2"
+            width="300"
+          />
+          <h3>Nome do Projeto 2</h3>
+          <p>Descrição breve das tecnologias e objetivo do projeto.</p>
+          <a
+            href="https://github.com/seu-usuario/projeto2"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Ver no GitHub</a
+          >
+        </article>
+      </section>
+        
+        <!-- Conteúdo de formação será preenchido na Aula 2 -->
+      </section>
+
+      <!-- Seção: Contato -->
+      <section id="contato">
+        <h2>Entre em Contato</h2>
+        <p>Preencha o formulário e entrarei em contato em breve!</p>
+        <form action="#" method="post">
+          <label for="nome">Nome:</label>
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            placeholder="Seu nome completo"
+            required
+          />
+          <br />
+
+          <label for="email">E-mail:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="seu@email.com"
+            required
+          />
+          <br />
+
+          <label for="assunto">Assunto:</label>
+          <input
+            type="text"
+            id="assunto"
+            name="assunto"
+            placeholder="Motivo do contato"
+          />
+          <br /><br />
+
+          <label for="mensagem">Mensagem:</label>
+          <textarea
+            id="mensagem"
+            name="mensagem"
+            rows="5"
+            placeholder="Sua mensagem aqui..."
+            required
+          ></textarea>
+          <br /><br />
+
+          <button type="submit">Enviar Mensagem</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- ==================== RODAPÉ ==================== -->
+    <footer>
+      <p>&copy; 2026 Bruno Lieberth. Todos os direitos reservados.</p>
+      <ul>
+        <li>
+          <a
+            href="https://github.com/seu-usuario"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://linkedin.com/in/seu-perfil"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+        </li>
+      </ul>
+    </footer>
+
+    <script src="./js/scripst.js"></script>
+  </body>
+</html>
