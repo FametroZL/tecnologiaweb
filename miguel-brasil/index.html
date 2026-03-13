@@ -18,32 +18,34 @@
 
     <header>
         <div class="container-header">
-            <img src="/img/minha-foto.png">
+            <img src="/img/minha-foto.png" alt="minha-foto">
             <span>Miguel Arcanjo</span>
         </div>
         <nav class="navbar">
             <ul class="ul-nav">
-                <li><a href="">Início</a></li>
-                <li><a href="#projetos">Projetos</a></li>
                 <li><a href="#formacao">Sobre mim</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#formacao">Formações</a></li>
                 <li><a href="#contatos">Contatos</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="sobre-mim">
 
+        <section class="sobre-mim">
             <article class="sobre-mim-texto">
                 <h1>Olá,</h1>
                 <h2>me chamo <span>Miguel Arcanjo!</span></h2>
-                <h3>Sou Desenvolvedor Full-Stack e gosto de resolver problemas.</h3>
-                <h3> Tenho boa relação com colegas de equipe, consigo me comunicar bem, e
-                    demonstro proatividade e eficiência.</h3>
+                <p>Sou Desenvolvedor Full-Stack e gosto de resolver problemas.
+                    Tenho boa relação com colegas de equipe, consigo me comunicar bem, e
+                    demonstro proatividade e eficiência.
+                </p>
+                <p>Sou apaixonado por tecnologia e estou sempre disposto a aprender mais.</p>
             </article>
 
             <div class="container-imagem-sobre-mim">
-                <img src="img/minha-foto.png" alt="">
+                <img src="img/minha-foto.png" alt="minha-foto-2">
             </div>
         </section>
 
@@ -57,7 +59,7 @@
                     <p>É uma plataforma de software de estudos que apresenta uma nova
                         maneira de como os usuários abordam seus objetivos educacionais.
                         usabilidade mais divertida e imersiva.</p>
-                    <p class="desenvolvido"> Desenvolvidada com Java, utilizando integração com banco de
+                    <p id="desenvolvido"> Desenvolvidada com Java, utilizando integração com banco de
                         dados MySQL, e a interface em Java Swing.
                     </p>
                 </article>
@@ -68,7 +70,7 @@
                         transforma métodos tradicionais de rastreio de atenção e memória
                         em uma experiência interativa e lúdica através de um questionário interativo.
                     </p>
-                    <p class="desenvolvido">
+                    <p id="desenvolvido">
                         Desenvolvida com tecnologias web (React), conectada e conectada
                         a uma API em Node.
                     </p>
@@ -80,7 +82,7 @@
                         comunidade católica Nossa Senhora do Perpétuo Socorro, focado na
                         organização de eventos paroquiais.
                     </p>
-                    <p class="desenvolvido">
+                    <p id="desenvolvido">
                         Desenvolvido com o framework Flutter.
                     </p>
                 </article>
@@ -94,8 +96,7 @@
                         robusta para gerenciamento eficiente de conteúdo.
                     </p>
 
-                    <p class="desenvolvido">Desenvolvida com React Js e Java Spring boot.</p>
-                    </li>
+                    <p id="desenvolvido">Desenvolvida com React Js e Java Spring boot.</p>
                 </article>
             </div>
         </section>
@@ -105,64 +106,96 @@
                 <h2>Formações</h2>
             </div>
 
-            <div class="titulo-container">
-                <img src="/img/foto-sobre.jpg">
+            <div class="formacao-container">
+                <div>
+                    <img src="/img/foto-sobre.jpg" alt="foto-sobre">
+                </div>
                 <article>
                     <ol>
-                        <li>Técnico Nível Médio em Informática</li>
-                        <li></li>
+                        <li>Técnico Nível Médio em Informática pelo Instituto Federal do Amazonas (IFAM)</li>
+                        <li>Graduando em Sistemas de Informação pelo CEUNI-Fametro</li>
                     </ol>
                 </article>
             </div>
-
         </section>
 
         <section class="hard-skills">
-            <div>
 
-                <h1>Hard Skills</h1>
+            <div class="hard-titulo">
+                <h2>Hard Skills</h2>
             </div>
-            <div class="hard-container">
 
+            <div class="hard-container">
                 <ul>
-                    <li>Java</li>
-                    <li>Java Spring Boot</li>
-                    <li>Flutter</li>
-                    <li>Github</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
+                    <li>
+                        <img src="/img/java.svg" alt="java">
+                        JAVA
+                    </li>
+                    <li>
+                        <img src="/img/spring.svg" alt="java-spring-boot">
+                        JAVA SPRING BOOT
+                    </li>
+                    <li>
+                        <img src="/img/database.svg" alt="database">
+                        SQL / NOSQL
+                    </li>
+                    <li>
+                        <img src="/img/flutter.svg" alt="flutter">
+                        FLUTTER
+                    </li>
+                    <li>
+                        <img src="/img/html.svg" alt="html">
+                        HTML
+                    </li>
+                    <li>
+                        <img src="/img/css.svg" alt="css">
+                        CSS
+                    </li>
                 </ul>
             </div>
         </section>
 
         <section class="soft-skills">
-            <div>
-
-                <h1>Soft Skills</h1>
+            <div class="soft-titulo">
+                <h2>Soft Skills</h2>
             </div>
-            <div class="soft-container">
 
+            <div class="soft-container">
                 <ul>
-                    <li>Boa comunicação</li>
-                    <li>Pro-Ativo</li>
-                    <li>Resiliência e Adaptabilidade</li>
-                    <li>Boa relação com companheiros de equipe</li>
-                    <li>Resolução de problemas</li>
+                    <li>1. Boa comunicação</li>
+                    <li>2. Pro-Ativo</li>
+                    <li>3. Resiliência e Adaptabilidade</li>
+                    <li>4. Boa relação com companheiros de equipe</li>
+                    <li>5. Resolução de problemas</li>
                 </ul>
             </div>
         </section>
 
         <section id="contatos" class="contatos">
+            <div class="titulo-contatos">
+                <h2>Contatos</h2>
+            </div>
             <div class="container-contatos">
-                <article class="card-contatos">
-                    WhatsApp: (92) 99479-4878
-                </article>
-                <article class="card-contatos">
-                    Email: devmiguelarcanjo@gmail.com
-                </article>
-                <article class="card-contatos">
-                    Github: MIGUEL-ARCANJO-BRASIL
-                </article>
+                <a href="https://wa.me/92994794878" target="_blank">
+                    <article class="card-contatos">
+                        <img src="/img/zap.svg" alt="whatsapp">
+                        WhatsApp: (92) 99479-4878
+                    </article>
+                </a>
+
+                <a href="mailto:devmiguelarcanjo@gmail.com" target="_blank">
+                    <article class="card-contatos">
+                        <img src="/img/email.svg" alt="email">
+                        Email: devmiguelarcanjo@gmail.com
+                    </article>
+                </a>
+
+                <a href="https://github.com/MIGUEL-ARCANJO-BRASIL" target="_blank">
+                    <article class="card-contatos">
+                        <img src="/img/github.svg" alt="github">
+                        Github: MIGUEL-ARCANJO-BRASIL
+                    </article>
+                </a>
             </div>
         </section>
 
