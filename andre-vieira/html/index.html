@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
@@ -5,11 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portfólio - André Vieira</title>
         <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     </head>
     <body>
         <!--=============== CABEÇALHO ================-->
         <header>
-            <div class="header container">
+            <div class="header-container">
                 <img src="img/Andre.jpg" alt="Foto de [André]" width="100">
                 <div class="header-texto">
                     <h1>
@@ -33,6 +37,10 @@
             <!--Seção: sobre mim-->
             <section id="Sobre">
                  <h2>Sobre mim</h2>
+                 <div class="Sobre-container">
+                    <img src="img/Andre.jpg" alt="Foto de [Andre]" class="Foto-sobre">
+                 </div>
+                 <div class="Sobre-texto">
                <p>Olá! Sou <strong> André</strong>, estudante de Sistemas de Informação.
                   Tenho interesse em desenvolvimento web e criação de soluções digitais.</p>
                <p>Cursando o <strong>5º período</strong> na CEUNI FAMETRO, Manaus - AM,
@@ -49,28 +57,31 @@
                 <li>Ensino Médio - [Francisco Albuquerque], [2002]</li>
                 <li>Graduação em Sistemas de Informação - CEUNI FAMETRO (em andamento)</li>
                </ol>
+               </div>
             </section>
             <!--Seção: Projetos-->
-            <section id="projetos">
+            <section id="Projetos">
               <h2>Projetos</h2>
-              <article class="card projeto">
+              <div class="projetos-grid">
+              <article class="card-projeto">
                 <img src="img/projeto1.jpg" alt="Screenshot do Projeto 1" width="300">
-                <h3>Nome do Projeto 1</h3>
-                <p>Descrição breve das tecnologias e o objetivo do projeto</p>
+                <h3>Inovatech 2024  Cidades Inteligentes</h3>
+                <p>Uso da tecnologia aplicada para melhorar a eficiência dos serviços públicos</p>
                 <a href="https://github.com/AndreVieiradosSantos/projeto1"
                 target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
               </article>
 
-              <article class="card projeto">
+              <article class="card-projeto">
                 <img src="img/projeto2.jpg" alt="Screenshot do Projeto 2" width="300">
-                <h3>Nome do Projeto 2</h3>
-                <p>Descrição breve das tecnologias e o objetivo do projeto</p>
+                <h3>Inovatech 2025  Robótica Colaborativa e Acessibiladade</h3>
+                <p>Como os cobots e a inteligência artifical podem ser usados para criar soluções para pessoas com necessidades especiais</p>
                 <a href="https://github.com/AndreVieiradosSantos/projeto1"
                 target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
               </article>
+              </div>
             </section>
             <!--Seção: Formação e Experiência-->
-            <section id="formação">
+            <section id="Formação">
                 <h2>Formação e Experiência</h2>
                 <h3>Acadêmica</h3>
                 <ul>
@@ -91,7 +102,7 @@
                 
             </section>
             <!--Seção: Contato-->
-            <section id="contato">
+            <section id="Contato">
                 <h2>Entre em Contato</h2>
                 <p>Preencha o formulário e entrarei em contato em breve!</p>
                 <form action="#" method="post">
