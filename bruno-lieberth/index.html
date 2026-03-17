@@ -4,14 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfólio — Bruno Lieberth</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="/portifolio/styles.css/style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
     <!-- ==================== CABEÇALHO ==================== -->
-
     <header>
       <div class="header-container">
-        <img src="img/foto-perfil.jpg" alt="Foto de Bruno" width="100" />
+        <img src="/portifolio/img/vovó.png" alt="Foto de Bruno" width="100" />
         <div class="header-texto">
           <h1>Bruno Lieberth dos Santos Lima</h1>
           <p><em>Estudante de Sistemas de Informação — CEUNI FAMETRO</em></p>
@@ -30,6 +38,7 @@
 
     <!-- ==================== CONTEÚDO PRINCIPAL ==================== -->
     <main>
+
       <!-- Seção: Sobre Mim -->
       <section id="sobre">
         <h2>Sobre Mim</h2>
@@ -51,29 +60,8 @@
           <li>Java</li>
           <li>C e C++</li>
           <li>JavaScript</li>
+          <li>Programação Orientada a Objetos</li>
         </ul>
-
-        <h3>Formação Acadêmica</h3>
-        <ol>
-          <li>
-            Ensino Médio — Escola Estadual Presidente Castelo Branco, 2023
-          </li>
-          <li>
-            Graduação em Sistemas de Informação - CEUNI FAMETRO (em andamento)
-          </li>
-        </ol>
-
-          <h3>Cursos e certificações</h3>
-
-          <ol>
-          <li>
-            Assistente administrativo e Relações humanas, 2023
-          </li>
-          <li>
-            Informatica básica e avançada, 2023
-          </li>
-        </ol>
-        
       </section>
 
       <!-- Seção: Projetos -->
@@ -82,38 +70,46 @@
 
         <article class="card-projeto">
           <img
-            src="img/projeto1.jpg"
-            alt="Screenshot do Projeto 1"
+            src="img/lumis.png"
+            alt="Screenshot do Projeto Luminspect"
             width="300"
           />
-          <h3>Nome do Projeto 1</h3>
-          <p>Descrição breve das tecnologias e objetivo do projeto.</p>
+          <h3>Luminspect</h3>
+          <p>
+            É uma plataforma gamificada de autoavaliação cognitiva que
+            transforma métodos tradicionais de rastreio de atenção e memória em
+            uma experiência interativa e lúdica através de um questionário
+            interativo.
+          </p>
+          <p>Desenvolvido em React conectada a uma API em Node.</p>
           <a
-            href="https://github.com/seu-usuario/projeto1"
+            href="https://inovatech-lumispect.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
-            >Ver no GitHub</a
-          >
-        </article>
-
-        <article class="card-projeto">
-          <img
-            src="img/projeto2.jpg"
-            alt="Screenshot do Projeto 2"
-            width="300"
-          />
-          <h3>Nome do Projeto 2</h3>
-          <p>Descrição breve das tecnologias e objetivo do projeto.</p>
-          <a
-            href="https://github.com/seu-usuario/projeto2"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Ver no GitHub</a
+            >Ver Projeto</a
           >
         </article>
       </section>
-        
-        <!-- Conteúdo de formação será preenchido na Aula 2 -->
+
+      <!-- Seção: Formação e Experiência -->
+      <section id="formacao">
+        <h2>Formação e Experiência</h2>
+
+        <h3>Acadêmica</h3>
+        <ol>
+          <li>
+            Ensino Médio — Escola Estadual Presidente Castelo Branco, 2023
+          </li>
+          <li>
+            Graduação em Sistemas de Informação — CEUNI FAMETRO (em andamento)
+          </li>
+        </ol>
+
+        <h3>Cursos e Certificações</h3>
+        <ol>
+          <li>Assistente Administrativo e Relações Humanas, 2023</li>
+          <li>Informática Básica e Avançada, 2023</li>
+        </ol>
       </section>
 
       <!-- Seção: Contato -->
@@ -129,7 +125,6 @@
             placeholder="Seu nome completo"
             required
           />
-          <br />
 
           <label for="email">E-mail:</label>
           <input
@@ -139,7 +134,6 @@
             placeholder="seu@email.com"
             required
           />
-          <br />
 
           <label for="assunto">Assunto:</label>
           <input
@@ -148,7 +142,6 @@
             name="assunto"
             placeholder="Motivo do contato"
           />
-          <br /><br />
 
           <label for="mensagem">Mensagem:</label>
           <textarea
@@ -158,11 +151,11 @@
             placeholder="Sua mensagem aqui..."
             required
           ></textarea>
-          <br /><br />
 
           <button type="submit">Enviar Mensagem</button>
         </form>
       </section>
+
     </main>
 
     <!-- ==================== RODAPÉ ==================== -->
@@ -171,7 +164,7 @@
       <ul>
         <li>
           <a
-            href="https://github.com/seu-usuario"
+            href="https://github.com/Liberth1606"
             target="_blank"
             rel="noopener noreferrer"
             >GitHub</a
@@ -179,7 +172,7 @@
         </li>
         <li>
           <a
-            href="https://linkedin.com/in/seu-perfil"
+            href="https://linkedin.com/in/bruno-lieberth-santos-lima"
             target="_blank"
             rel="noopener noreferrer"
             >LinkedIn</a
