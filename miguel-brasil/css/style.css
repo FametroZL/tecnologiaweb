@@ -7,16 +7,17 @@
 
 html {
     scroll-behavior: smooth;
-  }
-  
-body {
-    padding: 0;
-    margin: 0;
 }
 
-img{
+body {
+    margin: 0;
+    padding: 0;
+}
+
+img {
     object-fit: contain;
 }
+
 h2 {
     border-bottom: 2px solid var(--secondary-color);
 }
@@ -36,7 +37,6 @@ header {
     padding: var(--spacing);
     justify-content: space-around;
     border-bottom: 2px solid var(--secondary-color);
-
 }
 
 .container-header {
@@ -51,7 +51,7 @@ header {
 
 }
 
-.container-header div p:hover{
+.container-header div p:hover {
     color: var(--text-color);
     transform: translateY(-5px);
     cursor: pointer;
@@ -160,7 +160,7 @@ p {
     justify-content: center;
     width: 750px;
     height: 300px;
-    
+
 }
 
 .container-imagem-sobre-mim img {
@@ -217,15 +217,15 @@ p {
     justify-content: space-between;
     align-items: flex-start;
     padding: var(--spacing);
-    max-width: 500px;
-    height: 280px;
+    flex: 0 0 500px;
+    height: 300px;
     border-radius: var(--spacing);
     border: 3px solid var(--secondary-color);
     background-color: var(--text-color);
     transition: background-color 0.3s ease, transform 0.2s ease-in-out;
-
 }
-.card-projetos img{
+
+.card-projetos img {
     width: 70px;
 }
 
@@ -320,9 +320,10 @@ p {
     align-items: center;
     padding: 10px;
     background-color: var(--text-color);
-    width: 200px;
+    flex: 0 0 200px;
+    height: 40px;
     border-radius: var(--spacing);
-    border: 2px solid var(--secondary-color);
+    border: 3px solid var(--secondary-color);
     color: var(--primary-color);
     font-weight: bold;
     font-size: 14px;
@@ -350,7 +351,7 @@ p {
     border-bottom-right-radius: var(--spacing);
     border-bottom-left-radius: var(--spacing);
     color: var(--text-color);
-    
+
 }
 
 .soft-titulo h2 {
@@ -380,9 +381,10 @@ p {
     text-align: center;
     padding: 10px;
     background-color: var(--text-color);
-    width: 200px;
+    flex: 0 0 200px;
+    height: 40px;
     border-radius: var(--spacing);
-    border: 2px solid var(--secondary-color);
+    border: 3px solid var(--secondary-color);
     color: var(--primary-color);
     font-weight: bold;
     font-size: 14px;
@@ -398,66 +400,107 @@ p {
 }
 
 .contatos {
+    display: flex;
+    flex-direction: column;
     margin: 50px auto;
     padding: var(--spacing);
     background-color: var(--primary-color);
     color: var(--text-color);
     border-radius: var(--spacing);
     border: 3px solid var(--secondary-color);
-    height: 340px;
 }
 
-.titulo-contatos h2 {
+.titulo-contatos h2,
+.titulo-contatos p {
     width: 30%;
     text-align: center;
 }
 
-.container-contatos {
-    margin: 1.5rem auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+form {
+    align-self: center;
+    max-width: 640px;
 }
 
-.card-contatos {
-    padding: var(--spacing);
-    color: var(--primary-color);
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    color: var(--secondary-color);
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+
+    font-size: 1rem;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(46, 117, 182, 0.2);
+}
+
+button[type='submit'] {
     background-color: var(--text-color);
-    width: 380px;
+    color: var(--primary-color);
     border: 3px solid var(--secondary-color);
+    padding: 0.75rem 2rem;
     border-radius: var(--spacing);
-    margin-bottom: 15px;
-    font-weight: bold;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button[type='submit']:hover {
+    background-color: var(--secondary-color);
+}
+
+.div-contato {
     display: flex;
-    align-items: center;
-    justify-content: start;
-    gap: var(--spacing);
-    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
-
-}
-
-.card-contatos img {
-    width: 30px;
-}
-
-.card-contatos:hover {
-    transform: translateY(-5px);
-}
-
-footer {
-    background-color: var(--primary-color);
+    justify-content: space-evenly;
     padding: var(--spacing);
+
+}
+
+
+footer{
+    padding: var(--spacing);
+    background-color: var(--primary-color);
+}
+
+footer a {
     color: var(--text-color);
 }
 
+footer ul {
+    list-style: none;
+    display:
+        flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+    
+}
+footer li{
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+    padding: 5px;
+}
+
 footer p {
+    color: var(--text-color);
     text-align: center;
     padding: 8px;
     transition: background-color 0.3s ease, transform 0.2s ease-in-out;
 }
 
-footer p:hover{
+footer p:hover, footer li:hover {
     color: var(--secondary-color);
     transform: translateY(-10px);
     cursor: pointer;
