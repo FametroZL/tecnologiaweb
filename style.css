@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f6f9;
+    color: #333;
+}
+
+header {
+    background: #0a66c2;
+    height: 80px;
+}
+
+#titulo {
+    text-align: center;
+    margin-top: 20px;
+    color: #0a66c2;
+}
+
+#frase {
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+nav {
+    background: white;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+nav h2 {
+    color: #0a66c2;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin: 8px 0;
+}
+
+footer {
+    text-align: center;
+    background: #0a66c2;
+    color: white;
+    padding: 15px;
+    margin-top: 40px;
+}
