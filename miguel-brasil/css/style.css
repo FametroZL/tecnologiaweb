@@ -2,6 +2,7 @@
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
+
 }
 
 html {
@@ -46,10 +47,15 @@ header {
 
 .container-header div p {
     color: var(--secondary-color);
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+
 }
 
 .container-header div p:hover{
     color: var(--text-color);
+    transform: translateY(-5px);
+    cursor: pointer;
+
 }
 
 .container-header img {
@@ -60,15 +66,19 @@ header {
 
 }
 
-header span {
+.container-header h3 {
     margin: auto 360px auto 0px;
     font-size: var(--spacing);
     color: var(--text-color);
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+
 }
 
-header span:hover {
+.container-header div h3:hover {
     color: var(--secondary-color);
     transform: translateY(-5px);
+    cursor: pointer;
+
 }
 
 .navbar {
@@ -90,7 +100,10 @@ a:hover {
 }
 
 .ul-nav li {
-    margin: auto 30px;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    margin: auto 10px;
     list-style: none;
     color: var(--text-color);
     transition: background-color 0.3s ease, transform 0.2s ease-in-out;
@@ -117,7 +130,7 @@ main {
     border-radius: var(--spacing);
 
     min-height: 350px;
-    border: 3px solid #ff6b00;
+    border: 3px solid var(--secondary-color);
 }
 
 .sobre-mim-texto {
@@ -190,6 +203,7 @@ p {
 }
 
 .container-projetos {
+    margin-top: var(--spacing);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -217,6 +231,7 @@ p {
 
 .card-projetos:hover {
     transform: translateY(-5px);
+    cursor: pointer;
 }
 
 .card-projetos p {
@@ -241,8 +256,8 @@ p {
     background-color: var(--primary-color);
     padding: var(--spacing);
     color: var(--text-color);
-    border-left: 3px solid #ff6b00;
-    border-right: 3px solid #ff6b00;
+    border-left: 3px solid var(--secondary-color);
+    border-right: 3px solid var(--secondary-color);
 
 }
 
@@ -322,10 +337,12 @@ p {
 
 .hard-container li:hover {
     transform: translateY(-5px);
+    cursor: pointer;
+
 }
 
 .soft-skills {
-    padding: var(--spacing);
+    padding: 1.5rem var(--spacing);
     background-color: var(--primary-color);
     border-left: 3px solid var(--secondary-color);
     border-right: 3px solid var(--secondary-color);
@@ -333,6 +350,7 @@ p {
     border-bottom-right-radius: var(--spacing);
     border-bottom-left-radius: var(--spacing);
     color: var(--text-color);
+    
 }
 
 .soft-titulo h2 {
@@ -345,12 +363,14 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .soft-container ul {
     display: flex;
     gap: var(--spacing);
     flex-wrap: wrap;
+
 }
 
 .soft-container li {
@@ -359,10 +379,10 @@ p {
     align-items: center;
     text-align: center;
     padding: 10px;
-    background-color: var(--secondary-color);
+    background-color: var(--text-color);
     width: 200px;
     border-radius: var(--spacing);
-    border: 2px solid var(--text-color);
+    border: 2px solid var(--secondary-color);
     color: var(--primary-color);
     font-weight: bold;
     font-size: 14px;
@@ -373,6 +393,8 @@ p {
 
 .soft-container li:hover {
     transform: translateY(-5px);
+    cursor: pointer;
+
 }
 
 .contatos {
@@ -431,19 +453,32 @@ footer {
 
 footer p {
     text-align: center;
+    padding: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+}
 
+footer p:hover{
+    color: var(--secondary-color);
+    transform: translateY(-10px);
+    cursor: pointer;
 }
 
 header img:hover {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
+    border-color: var(--text-color);
+    cursor: pointer;
 }
 
 .sobre-mim img:hover {
     transform: translateY(-10px);
+    border-color: var(--text-color);
+    cursor: pointer;
 
 }
 
 .formacao img:hover {
     transform: translateY(-10px);
+    border-color: var(--text-color);
+    cursor: pointer;
 
 }
