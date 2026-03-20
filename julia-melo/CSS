@@ -1,0 +1,208 @@
+/* ===================================================
+                        CSS RESET
+   =================================================== */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* ===================================================
+                         VARIÁVEIS CSS
+     =================================================== */
+  :root {
+    --cor-primaria: #2E75B6;
+    --cor-secundaria: #1F4E79;
+    --cor-texto: #333333;
+    --cor-fundo: #F5F7FA;
+    --cor-branco: #FFFFFF;
+  
+    --fonte-principal: 'Inter', sans-serif;
+    --tamanho-base: 16px;
+    --espacamento: 1rem;
+  }
+  
+  /* ===================================================
+                      ESTILOS GLOBAIS
+     =================================================== */
+  body {
+    font-family: var(--fonte-principal);
+    font-size: var(--tamanho-base);
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
+    line-height: 1.6;
+  }
+  
+  /* ===================================================
+                          TIPOGRAFIA
+     =================================================== */
+  h1, h2, h3 {
+    color: var(--cor-secundaria);
+    line-height: 1.2;
+    margin-bottom: 0.75rem;
+  }
+  
+  h1 { font-size: 2.5rem; }
+  h2 { 
+    font-size: 1.8rem; 
+    border-bottom: 3px solid var(--cor-primaria);
+    padding-bottom: 0.5rem;
+  }
+  h3 { font-size: 1.2rem; }
+  
+  p {
+    margin-bottom: var(--espacamento);
+    color: var(--cor-texto);
+  }
+  
+  /* LINKS */
+  a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+    color: var(--cor-secundaria);
+  }
+  
+  /* ===================================================
+                              SEÇÕES
+     =================================================== */
+  section {
+    padding: 4rem 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  /* ===================================================
+                        HEADER
+  =================================================== */
+  header {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-branco);
+    padding: 1.5rem 2rem;
+  }
+  
+  header h1 {
+    color: var(--cor-branco);
+    font-size: 1.8rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  header p {
+    color: #AEC6E8;
+    margin-bottom: 0;
+  }
+  
+  header img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid var(--cor-primaria);
+    object-fit: cover;
+  }
+  
+  /* ===================================================
+                          NAV
+     =================================================== */
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  nav a {
+    color: var(--cor-branco);
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+  }
+  
+  nav a:hover {
+    color: var(--cor-primaria);
+  }
+  
+  /* ===================================================
+                     CARDS DE PROJETOS
+     =================================================== */
+  .card-projeto {
+    background-color: var(--cor-branco);
+    border: 1px solid #DDDDDD;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    width: 300px;
+  }
+  
+  .card-projeto img {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+  
+  /* ===================================================
+                       FORMULÁRIO
+     =================================================== */
+  form {
+    max-width: 600px;
+  }
+  
+  label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    color: var(--cor-secundaria);
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+  }
+  
+  input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--cor-primaria);
+    box-shadow: 0 0 0 3px rgba(46,117,182,0.2);
+  }
+  
+  button[type='submit'] {
+    background-color: var(--cor-primaria);
+    color: var(--cor-branco);
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  button[type='submit']:hover {
+    background-color: var(--cor-secundaria);
+  }
+  
+  /* ===================================================
+                     FOOTER
+     =================================================== */
+  footer {
+    background-color: var(--cor-secundaria);
+    color: #AEC6E8;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+  
+  footer a {
+    color: var(--cor-primaria);
+  }
