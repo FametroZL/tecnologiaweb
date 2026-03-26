@@ -1,527 +1,583 @@
 * {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 img {
-    object-fit: contain;
+  object-fit: contain;
 }
 
 h2 {
-    border-bottom: 2px solid var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
 }
 
 :root {
-    --primary-color: #0a101d;
-    --secondary-color: #ff6b00;
-    --text-color: #ffff;
-    --font-size: 18px;
-    --spacing: 1.2rem;
+  --primary-color: #2e75b6;
+  --secondary-color: #1f4e79;
+  --third-color: #333333;
+  --text-color: #ffff;
+  --font-size: 18px;
+  --spacing: 1.2rem;
 }
 
 header {
-    background-color: var(--primary-color);
-    display: flex;
-    align-items: center;
-    padding: var(--spacing);
-    justify-content: space-around;
-    border-bottom: 2px solid var(--secondary-color);
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  padding: var(--spacing);
+  justify-content: space-around;
+  border-bottom: 2px solid var(--secondary-color);
 }
 
 .container-header {
-    display: flex;
-    align-items: center;
-    gap: var(--spacing);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing);
 }
 
 .container-header div p {
-    color: var(--secondary-color);
-    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
-
+  font-weight: 600;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease-in-out;
 }
 
 .container-header div p:hover {
-    color: var(--text-color);
-    transform: translateY(-5px);
-    cursor: pointer;
-
+  color: var(--text-color);
+  transform: translateY(-5px);
+  cursor: pointer;
 }
 
 .container-header img {
-    width: 100px;
-    border-radius: 100%;
-    border: 3px solid var(--secondary-color);
-    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
-
+  width: 100px;
+  border-radius: 100%;
+  border: 3px solid var(--secondary-color);
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease-in-out;
 }
 
 .container-header h3 {
-    margin: auto 360px auto 0px;
-    font-size: var(--spacing);
-    color: var(--text-color);
-    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
-
+  margin: auto 360px auto 0px;
+  font-size: var(--spacing);
+  color: var(--text-color);
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease-in-out;
 }
 
 .container-header div h3:hover {
-    color: var(--secondary-color);
-    transform: translateY(-5px);
-    cursor: pointer;
-
+  transform: translateY(-5px);
+  cursor: pointer;
 }
 
 .navbar {
-    padding: 8px;
+  padding: 8px;
 }
 
 .ul-nav {
-    display: flex;
-    margin: auto;
+  display: flex;
+  margin: auto;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 a:hover {
-    color: var(--secondary-color);
+  color: var(--secondary-color);
 }
 
 .ul-nav li {
-    padding: 10px;
-    width: 100px;
-    text-align: center;
-    margin: auto 10px;
-    list-style: none;
-    color: var(--text-color);
-    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
-
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+  margin: auto 10px;
+  list-style: none;
+  color: var(--text-color);
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease-in-out;
 }
 
 .ul-nav li:hover {
-    transform: translateY(-5px);
-
+  transform: translateY(-5px);
 }
 
 main {
-    padding: var(--spacing);
+  padding: var(--spacing);
 }
 
 .sobre-mim {
-    display: flex;
-    margin: 50px auto;
-    justify-content: center;
-    align-items: center;
-    padding: var(--spacing);
-    color: var(--text-color);
-    background-color: var(--primary-color);
-    border-radius: var(--spacing);
+  display: flex;
+  margin: 50px auto;
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacing);
+  color: var(--text-color);
+  background-color: var(--primary-color);
+  border-radius: var(--spacing);
 
-    min-height: 350px;
-    border: 3px solid var(--secondary-color);
+  min-height: 350px;
+  border: 3px solid var(--secondary-color);
 }
 
 .sobre-mim-texto {
-    max-width: 750px;
-    height: 300px;
-
+  max-width: 750px;
+  height: 300px;
 }
 
 .sobre-mim-texto h1,
 h2,
 p {
-    margin: 10px auto;
-    text-align: justify;
+  margin: 10px auto;
+  text-align: justify;
 }
 
 .sobre-mim p {
-    font-size: var(--font-size);
+  font-size: var(--font-size);
 }
 
 .sobre-mim-texto span {
-    font-weight: 600;
-    color: var(--secondary-color);
+  font-weight: 700;
+  color: var(--third-color);
 }
 
 .container-imagem-sobre-mim {
-    display: flex;
-    justify-content: center;
-    width: 750px;
-    height: 300px;
-
+  display: flex;
+  justify-content: center;
+  width: 750px;
+  height: 300px;
 }
 
 .container-imagem-sobre-mim img {
-    width: 300px;
-    border-radius: 50%;
-    border: 3px solid var(--secondary-color);
-    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
-
+  width: 300px;
+  border-radius: 50%;
+  border: 3px solid var(--secondary-color);
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease-in-out;
 }
 
 .sobre-mim-image img:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .projetos {
-    padding: var(--spacing);
-    background-color: var(--primary-color);
-    border-left: 3px solid var(--secondary-color);
-    border-right: 3px solid var(--secondary-color);
-    border-top: 3px solid var(--secondary-color);
-    border-top-left-radius: var(--spacing);
-    border-top-right-radius: var(--spacing);
-    color: var(--text-color);
+  padding: var(--spacing);
+  background-color: var(--primary-color);
+  border-left: 3px solid var(--secondary-color);
+  border-right: 3px solid var(--secondary-color);
+  border-top: 3px solid var(--secondary-color);
+  border-top-left-radius: var(--spacing);
+  border-top-right-radius: var(--spacing);
+  color: var(--text-color);
 }
 
-
 .titulo-projetos h2 {
-    width: 30%;
-    text-align: center;
-    font-size: 30px;
+  width: 30%;
+  text-align: center;
+  font-size: 30px;
 }
 
 .projetos h3 {
-    text-align: center;
-    width: 250px;
-    color: var(--primary-color);
-    font-weight: bold;
-    margin: 0 auto;
-    border-bottom: 3px solid var(--primary-color);
+  text-align: center;
+  width: 250px;
+  color: var(--primary-color);
+  font-weight: bold;
+  margin: 0 auto;
+  border-bottom: 3px solid var(--primary-color);
 }
 
 .container-projetos {
-    margin-top: var(--spacing);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: var(--spacing);
+  margin-top: var(--spacing);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--spacing);
 }
 
 .card-projetos {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: var(--spacing);
-    flex: 0 0 500px;
-    height: 300px;
-    border-radius: var(--spacing);
-    border: 3px solid var(--secondary-color);
-    background-color: var(--text-color);
-    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: var(--spacing);
+  flex: 0 0 500px;
+  height: 300px;
+  border-radius: var(--spacing);
+  border: 3px solid var(--secondary-color);
+  background-color: var(--text-color);
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease-in-out;
 }
 
 .card-projetos img {
-    width: 70px;
+  width: 70px;
 }
 
 .card-projetos:hover {
-    transform: translateY(-5px);
-    cursor: pointer;
+  transform: translateY(-5px);
+  cursor: pointer;
 }
 
 .card-projetos p {
-    color: var(--primary-color);
-    text-align: justify;
+  color: var(--secondary-color);
+  text-align: justify;
 }
 
 #desenvolvido {
-    color: var(--secondary-color);
-    font-weight: 600;
-    text-align: start;
-    width: 100%;
+  color: var(--third-color);
+  font-weight: 700;
+  text-align: start;
+  width: 100%;
 }
 
 .projetos li:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
-
 .formacao {
-
-    background-color: var(--primary-color);
-    padding: var(--spacing);
-    color: var(--text-color);
-    border-left: 3px solid var(--secondary-color);
-    border-right: 3px solid var(--secondary-color);
-
+  background-color: var(--primary-color);
+  padding: var(--spacing);
+  color: var(--text-color);
+  border-left: 3px solid var(--secondary-color);
+  border-right: 3px solid var(--secondary-color);
 }
 
 .titulo-formacao h2 {
-    margin-top: var(--spacing);
-    text-align: center;
-    width: 30%;
+  margin-top: var(--spacing);
+  text-align: center;
+  width: 30%;
 }
 
 .formacao-container {
-    margin: 3rem auto;
-    display: flex;
-    justify-content: center;
-    gap: var(--spacing);
+  margin: 3rem auto;
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing);
 }
 
 .formacao-container article {
-    max-width: 600px;
+  max-width: 600px;
 }
 
 .formacao-container img {
-    border-radius: var(--spacing);
-    width: 200px;
-    border: 3px solid var(--secondary-color);
-    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
-
+  border-radius: var(--spacing);
+  width: 200px;
+  border: 3px solid var(--secondary-color);
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease-in-out;
 }
 
 .hard-skills {
-    padding: var(--spacing);
-    background-color: var(--primary-color);
-    border-left: 3px solid var(--secondary-color);
-    border-right: 3px solid var(--secondary-color);
-    color: var(--text-color);
+  padding: var(--spacing);
+  background-color: var(--primary-color);
+  border-left: 3px solid var(--secondary-color);
+  border-right: 3px solid var(--secondary-color);
+  color: var(--text-color);
 }
 
 .hard-titulo h2 {
-    margin: var(--spacing) auto;
-    text-align: center;
-    width: 30%;
+  margin: var(--spacing) auto;
+  text-align: center;
+  width: 30%;
 }
 
 .hard-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .hard-container ul {
-    display: flex;
-    gap: var(--spacing);
-    flex-wrap: wrap;
+  display: flex;
+  gap: var(--spacing);
+  flex-wrap: wrap;
 }
 
 .hard-container li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    background-color: var(--text-color);
-    flex: 0 0 200px;
-    height: 40px;
-    border-radius: var(--spacing);
-    border: 3px solid var(--secondary-color);
-    color: var(--primary-color);
-    font-weight: bold;
-    font-size: 14px;
-    gap: 10px;
-    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--text-color);
+  flex: 0 0 200px;
+  height: 40px;
+  border-radius: var(--spacing);
+  border: 3px solid var(--secondary-color);
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 14px;
+  gap: 10px;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease-in-out;
 }
 
 .hard-container li img {
-    width: 30px;
+  width: 30px;
 }
 
 .hard-container li:hover {
-    transform: translateY(-5px);
-    cursor: pointer;
-
+  transform: translateY(-5px);
+  cursor: pointer;
 }
 
 .soft-skills {
-    padding: 1.5rem var(--spacing);
-    background-color: var(--primary-color);
-    border-left: 3px solid var(--secondary-color);
-    border-right: 3px solid var(--secondary-color);
-    border-bottom: 3px solid var(--secondary-color);
-    border-bottom-right-radius: var(--spacing);
-    border-bottom-left-radius: var(--spacing);
-    color: var(--text-color);
-
+  padding: 1.5rem var(--spacing);
+  background-color: var(--primary-color);
+  border-left: 3px solid var(--secondary-color);
+  border-right: 3px solid var(--secondary-color);
+  border-bottom: 3px solid var(--secondary-color);
+  border-bottom-right-radius: var(--spacing);
+  border-bottom-left-radius: var(--spacing);
+  color: var(--text-color);
 }
 
 .soft-titulo h2 {
-    margin: var(--spacing) auto;
-    text-align: center;
-    width: 30%;
+  margin: var(--spacing) auto;
+  text-align: center;
+  width: 30%;
 }
 
 .soft-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .soft-container ul {
-    display: flex;
-    gap: var(--spacing);
-    flex-wrap: wrap;
-
+  display: flex;
+  gap: var(--spacing);
+  flex-wrap: wrap;
 }
 
 .soft-container li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-    background-color: var(--text-color);
-    flex: 0 0 200px;
-    height: 40px;
-    border-radius: var(--spacing);
-    border: 3px solid var(--secondary-color);
-    color: var(--primary-color);
-    font-weight: bold;
-    font-size: 14px;
-    gap: 10px;
-    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  background-color: var(--text-color);
+  flex: 0 0 200px;
+  height: 40px;
+  border-radius: var(--spacing);
+  border: 3px solid var(--secondary-color);
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 14px;
+  gap: 10px;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease-in-out;
 }
 
 .soft-container li:hover {
-    transform: translateY(-5px);
-    cursor: pointer;
-
+  transform: translateY(-5px);
+  cursor: pointer;
 }
 
 .contatos {
-    display: flex;
-    flex-direction: column;
-    margin: 50px auto;
-    padding: var(--spacing);
-    background-color: var(--primary-color);
-    color: var(--text-color);
-    border-radius: var(--spacing);
-    border: 3px solid var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  padding: var(--spacing);
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border-radius: var(--spacing);
+  border: 3px solid var(--secondary-color);
 }
 
 .titulo-contatos h2,
 .titulo-contatos p {
-    width: 30%;
-    text-align: center;
+  width: 30%;
+  text-align: center;
 }
 
-
 form {
-    align-self: center;
-    max-width: 640px;
+  align-self: center;
+  max-width: 640px;
 }
 
 label {
-    display: block;
-    font-weight: 600;
-    margin-bottom: 0.25rem;
-    color: var(--secondary-color);
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: var(--text-color);
 }
 
 input,
 textarea {
-    width: 100%;
-    padding: 0.75rem;
-    border: 1px solid #CCCCCC;
-    border-radius: 4px;
-    margin-bottom: 1rem;
-
-    font-size: 1rem;
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
 }
 
 input:focus,
 textarea:focus {
-    outline: none;
-    border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(46, 117, 182, 0.2);
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(46, 117, 182, 0.2);
 }
 
-button[type='submit'] {
-    background-color: var(--text-color);
-    color: var(--primary-color);
-    border: 3px solid var(--secondary-color);
-    padding: 0.75rem 2rem;
-    border-radius: var(--spacing);
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
+button[type="submit"] {
+  background-color: var(--text-color);
+  color: var(--primary-color);
+  border: 3px solid var(--secondary-color);
+  padding: 0.75rem 2rem;
+  border-radius: var(--spacing);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease-in-out;
 }
 
-button[type='submit']:hover {
-    background-color: var(--secondary-color);
+button[type="submit"]:hover {
+  transform: translateY(-10px);
 }
 
 .div-contato {
-    display: flex;
-    justify-content: space-evenly;
-    padding: var(--spacing);
-
+  display: flex;
+  justify-content: space-evenly;
+  padding: var(--spacing);
 }
 
-
-footer{
-    padding: var(--spacing);
-    background-color: var(--primary-color);
+footer {
+  padding: var(--spacing);
+  background-color: var(--primary-color);
 }
 
 footer a {
-    color: var(--text-color);
+  color: var(--text-color);
 }
 
 footer ul {
-    list-style: none;
-    display:
-        flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 0.5rem;
-    
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
 }
-footer li{
-    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
-    padding: 5px;
+footer li {
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease-in-out;
+  padding: 5px;
 }
 
 footer p {
-    color: var(--text-color);
-    text-align: center;
-    padding: 8px;
-    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+  color: var(--text-color);
+  text-align: center;
+  padding: 8px;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease-in-out;
 }
 
-footer p:hover, footer li:hover {
-    color: var(--secondary-color);
-    transform: translateY(-10px);
-    cursor: pointer;
+footer p:hover,
+footer li:hover {
+  color: var(--secondary-color);
+  transform: translateY(-10px);
+  cursor: pointer;
 }
 
 header img:hover {
-    transform: translateY(-5px);
-    border-color: var(--text-color);
-    cursor: pointer;
+  transform: translateY(-5px);
+  border-color: var(--text-color);
+  cursor: pointer;
 }
 
 .sobre-mim img:hover {
-    transform: translateY(-10px);
-    border-color: var(--text-color);
-    cursor: pointer;
-
+  transform: translateY(-10px);
+  border-color: var(--text-color);
+  cursor: pointer;
 }
 
 .formacao img:hover {
-    transform: translateY(-10px);
-    border-color: var(--text-color);
-    cursor: pointer;
+  transform: translateY(-10px);
+  border-color: var(--text-color);
+  cursor: pointer;
+}
 
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .container-header h3 {
+    margin: 0;
+  }
+
+  .ul-nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .ul-nav li {
+    width: auto;
+    margin: 4px 0;
+  }
+  .sobre-mim {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sobre-mim-texto {
+    height: auto;
+    max-width: 100%;
+  }
+
+  .container-imagem-sobre-mim {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-projetos {
+    flex: 1 1 100%;
+    height: auto;
+  }
+
+  .hard-container ul,
+  .soft-container ul {
+    justify-content: center;
+  }
+
+  .hard-container li,
+  .soft-container li {
+    flex: 1 1 calc(50% - 1rem);
+  }
+
+  .titulo-projetos h2,
+  .titulo-formacao h2,
+  .hard-titulo h2,
+  .soft-titulo h2,
+  .titulo-contatos h2,
+  .titulo-contatos p {
+    width: 100%;
+    text-align: center;
+  }
 }
