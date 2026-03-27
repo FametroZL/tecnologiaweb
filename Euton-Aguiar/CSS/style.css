@@ -1,0 +1,135 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================= VARIÁVEIS ================= */
+:root {
+  --cor-primaria: #73be92;
+  --cor-secundaria: #356931;
+  --cor-texto: #000000;
+  --cor-fundo: #ffffff;
+  --cor-branco: #ffffff;
+}
+
+/* ================= GLOBAL ================= */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  line-height: 1.6;
+}
+
+/* ================= HEADER ================= */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+
+  position: sticky;
+  top: 0;
+
+  background-color: var(--cor-secundaria);
+  color: white;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+header img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+/* ================= NAV ================= */
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* ================= SECTIONS ================= */
+section {
+  padding: 3rem;
+}
+
+/* ================= SOBRE ================= */
+.sobre-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.foto-sobre {
+  width: 200px;
+  border-radius: 50%;
+}
+
+/* ================= PROJETOS ================= */
+.projetos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card-projeto {
+  flex: 0 0 280px;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.card-projeto:hover {
+  transform: translateY(-5px);
+}
+
+/* ================= FORM ================= */
+input, textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+button {
+  background-color: var(--cor-primaria);
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  background-color: var(--cor-secundaria);
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* ================= RESPONSIVO ================= */
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+  }
+
+  .sobre-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-projeto {
+    flex: 1 1 100%;
+  }
+
+}
