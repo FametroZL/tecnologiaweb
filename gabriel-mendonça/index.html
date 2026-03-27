@@ -1,105 +1,119 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-    <title>Curso de Sistemas de Informação - FAMETRO</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio — Gabriel Halysson</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=sw
+    ap" rel="stylesheet"></head>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<header>
-    <div class="container nav">
-        <h2 class="logo">FAMETRO<span>.SI</span></h2>
-        <a href="#" class="btn-nav">Inscreva-se</a>
-    </div>
-</header>
-
-<section class="hero">
-    <div class="container hero-content">
-        <div class="hero-text">
-            <h1>Curso de <span>Sistemas de Informação</span></h1>
-            <p>Prepare-se para o mercado de tecnologia com uma formação prática, atualizada e focada nas profissões mais valorizadas da área.</p>
-
-            <div class="hero-buttons">
-                <a href="#" class="btn-primary">Quero Garantir Minha Vaga</a>
-                <a href="#" class="btn-outline">Ver Grade Curricular</a>
+    <body>
+        <header>
+            <div class="header-container">
+            <img src="img/foto-perfil.jpg" alt="Foto de [Gabriel]" width="100">
+            <div class="header-texto">
+            <h1>Gabriel Halysson de Lima Mendonça</h1>
+            <p><em>Estudante de Sistemas de Informação — FAMETRO ZONA LESTE</em></p>
             </div>
-        </div>
-    </div>
-</section>
+            </div>
+            <nav>
+                <ul>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav> 
+        </header>
 
-<section class="benefits">
-    <div class="container">
-        <h2>POR QUE ESCOLHER ESSE CURSO?</h2>
-
-        <div class="cards">
-
-            <div class="card">
-                <img src="img/card (4).png" alt="">
-                <div class="card-text">
-                    ✔ Formação voltada para o mercado
+        <main>
+            <section id="sobre">
+                <h2>Sobre Mim</h2>
+                <div class="sobre-container">
+                    <p>Olá! Sou <strong>Halysson</strong>, estudante de Sistemas de Informação.
+                    Tenho interesse em desenvolvimento web e criação de soluções digitais.</p>
+                    <p>Cursando o <strong>5° período</strong> na FAMETRO ZONA LESTE, Manaus-AM,
+                    desenvolvendo meu primeiro portfólio em <em>Tecnologia Web I</em>.</p>
+                    <h3>Minhas Habilidades</h3>
+                        <ul>
+                        <li>HTML5 e CSS3</li>
+                        <li>Lógica de Programação</li>
+                        <li>Git e GitHub</li>
+                        <li>Pacote Office</li>
+                        <li>Eletrônica</li>
+                        <li>Hardware e Software</li>
+                        </ul>
+                        <h3>Formação Acadêmica</h3>
+                        <ol>
+                        <li>Ensino Médio — IFAM, [2021 - 2023]</li>
+                        <li>Graduação em Sistemas de Informação - FAMETRO ZONA LESTE (em
+                        andamento)</li> </ol>
                 </div>
-            </div>
-
-            <div class="card">
-                <img src="img/card (3).png" alt="">
-                <div class="card-text">
-                    ✔ Projetos práticos desde o início
+            </section>
+            
+            <section id="projetos">
+                <h2>Projetos</h2>
+                <div class="projetos-grid">
+                    <article class="card-projeto">
+                    <img src="img/projeto1.jpg" alt="Screenshot do Projeto 1" width="300">
+                    <h3>Seguidor de Linha</h3>
+                    <p>Robô Seguidor de Linha, ultilizando Arduino</p>
+                    <a href="https://github.com/seu-usuario/projeto1"
+                    target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
+                    </article>
                 </div>
-            </div>
+            </article> </section>
+            </section>
 
-            <div class="card">
-                <img src="img/card (2).png" alt="">
-                <div class="card-text">
-                    ✔ Professores com experiência na área
-                </div>
-            </div>
+            <section id="formacao">
+                <h2>Formação e Experiência</h2>
+                <h3>Acadêmica</h3>
+                <ul>
+                <li><strong>Graduação em Sistemas de Informação</strong>
+                — FAMETRO LESTE<br>
+                <small>2025 – Atual | Manaus, AM</small></li>
+                <li><strong>Ensino Médio</strong> — [IFAM]<br>
+                <small>[2023]</small></li>
+                </ul>
+                <h3>Cursos e Certificações</h3>
+                <ul>
+                <li>HTML e CSS — [Curso Presencial, 2026]</li>
+                <li>Lógica de Programação — [Curso Presencial, 2026]</li>
+                </ul> 
+            </section>
 
-            <div class="card">
-                <img src="img/card (1).png" alt="">
-                <div class="card-text">
-                    ✔ Alta empregabilidade
-                </div>
-            </div>
+            <section id="contato">
+                <h2>Entre em Contato</h2>
+                <p>Preencha o formulário e entrarei em contato em breve!</p>
+                <form action="#" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome"
+                placeholder="Seu nome completo" required>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email"
+                placeholder="seu@email.com" required>
+                <label for="assunto">Assunto:</label>
+                <input type="text" id="assunto" name="assunto"
+                placeholder="Motivo do contato">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5"
+                placeholder="Sua mensagem aqui..." required></textarea>
+                <button type="submit">Enviar Mensagem</button>
+                </form> 
+            </section>
+        </main>
 
-        </div>
-    </div>
-</section>
+        <footer>
+            <p>&copy; 2026 Seu Nome. Todos os direitos reservados.</p>
+            <ul>
+                <li><a href="https://github.com/HalyssonLima"
+                target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            </ul> 
+        </footer>
+        
+    </body>
 
-<section class="about">
-    <div class="container">
-        <h2>O QUE VOCÊ VAI APRENDER?</h2>
-
-        <div class="cards">
-            <div class="card">Desenvolvimento Web</div>
-            <div class="card">Banco de Dados</div>
-            <div class="card">Segurança da Informação</div>
-            <div class="card">Redes de Computadores</div>
-        </div>
-    </div>
-</section>
-
-<section class="market">
-    <div class="container">
-        <h2>Mercado de Trabalho</h2>
-        <p>Atue como Desenvolvedor, Analista de Sistemas, Especialista em Segurança ou Gerente de Projetos de TI.</p>
-        <p class="salary">Salários de R$ 3.000 até R$ 15.000+</p>
-    </div>
-</section>
-
-<section class="cta">
-    <div class="container">
-        <h2>As vagas são limitadas. Comece sua carreira em tecnologia hoje.</h2>
-        <a href="#" class="btn-primary">Inscreva-se Agora</a>
-    </div>
-</section>
-
-<footer>
-    <p>© 2026 FAMETRO - Curso de Sistemas de Informação</p>
-</footer>
-
-</body>
 </html>
