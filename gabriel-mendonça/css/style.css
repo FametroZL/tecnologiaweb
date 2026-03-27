@@ -1,236 +1,275 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
+
+/* ===================================================
+VARIAVEIS CSS - Identidade visual do portfolio
+=================================================== */
+
+:root {
+--cor-primaria: #e2e2e2; /* azul principal */
+--cor-secundaria: #0f1d2e; /* azul escuro */
+--cor-texto: #333333; /* cinza escuro para texto */
+--cor-fundo: #FDFDFD; /* fundo cinza claro */
+--cor-branco: #FFFFFF;
+--fonte-principal: 'Inter', sans-serif;
+--tamanho-base: 16px;
+--espacamento: 1rem;
+}
+
+/* ===================================================
+ESTILOS GLOBAIS
+=================================================== */
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background: #0f172a;
-    color: white;
-    line-height: 1.6;
-}
+font-family: var(--fonte-principal);
+font-size: var(--tamanho-base);
+color: var(--cor-texto);
+background-color: var(--cor-fundo);
+line-height: 1.6;}
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-}
+/* ===================================================
+TIPOGRAFIA
+=================================================== */
+h1, h2, h3 {
+    color: var(--cor-secundaria);
+    line-height: 1.2;
+    margin-bottom: 0.75rem;
+    }
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 1.8rem; border-bottom: 3px solid var(--cor-primaria); paddingbottom:
+    0.5rem; }
+    h3 { font-size: 1.2rem; }
+    p {
+    margin-bottom: var(--espacamento);
+    color: var(--cor-texto);
+    }
+    a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+    }
+    a:hover {
+    text-decoration: underline;
+    color: var(--cor-secundaria);}
 
-/* NAVBAR */
+/* ===================================================
+SEÇÕES GERAIS
+=================================================== */
+section {
+    padding: 4rem 2rem; /* padding interno: afasta conteúdo das bordas
+    */
+    max-width: 1100px;
+    margin: 0 auto; /* margin auto centraliza horizontalmente */
+    }
+    /* ===================================================
+    CARDS DE PROJETOS — Box Model em ação
+    =================================================== */
+    .card-projeto {
+    background-color: var(--cor-branco);
+    border: 1px solid #DDDDDD; /* border: espessura, estilo, cor */
+    border-radius: 8px; /* bordas arredondadas */
+    padding: 1.5rem; /* padding: espaço interno */
+    margin: 1rem; /* margin: espaço externo */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* sombra sutil */
+    width: 280px;
+    }
+    .card-projeto img {
+    width: 100%; /* imagem ocupa 100% do card */
+    border-radius: 4px;
+    margin-bottom: 1rem;}
+
+/* ===================================================
+HEADER
+=================================================== */
 header {
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    padding: 20px 0;
-    z-index: 1000;
-}
-
-.nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    font-weight: 700;
-}
-
-.logo span {
-    color: #3b82f6;
-}
-
-.btn-nav {
-    background: #3b82f6;
-    padding: 8px 20px;
-    border-radius: 6px;
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
-}
-
-/* HERO */
-.hero {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    background: linear-gradient(135deg, #0f172a, #1e293b);
-    padding-top: 80px;
-}
-
-.hero-text h1 {
-    font-size: 60px;
-    margin-bottom: 20px;
-}
-
-.hero-text h1 span {
-    color: #3b82f6;
-}
-
-.hero-text p {
-    margin-bottom: 30px;
-    color: #cbd5e1;
-}
-
-.hero-buttons {
-    display: flex;
-    gap: 15px;
-}
-
-.benefits {
-    padding: 100px 0;
-    text-align: center;
-    background: #0b1120;
-}
-
-.benefits h2 {
-    margin-bottom: 50px;
-    font-size: 35px;
-}
-
-.benefits {
-    padding: 100px 0;
-    text-align: center;
-    background: #0b1120;
-}
-
-.benefits h2 {
-    margin-bottom: 50px;
-    font-size: 35px;
-}
-
-.card {
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 12px;
-    overflow: hidden;
-    transition: 0.3s;
-}
-
-.card img {
-    width: 100%;
-    height: 200px;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-branco);
+    padding: 1.5rem 2rem;
+    }
+    header h1 {
+    color: var(--cor-branco);
+    font-size: 1.8rem;
+    margin-bottom: 0.25rem;
+    }
+    header p { color: #FFFFFF; margin-bottom: 0; }
+    /* Foto de perfil circular */
+    header img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* torna a imagem circular */
+    border: 3px solid var(--cor-primaria);
     object-fit: cover;
-}
-
-.card-text {
-    padding: 10px;
-    font-weight: 500;
-}
-
-.card:hover {
-    transform: translateY(-8px);
-}
-
-.card {
-    backdrop-filter: blur(10px);
-}
-
-.btn-primary {
-    background: #3b82f6;
-    padding: 12px 25px;
-    border-radius: 6px;
-    text-decoration: none;
-    color: white;
+    }
+    /* ===================================================
+    NAVEGAÇÃO
+    =================================================== */
+    nav ul {
+    list-style: none; /* remove os marcadores padrão */
+    }
+    nav a {
+    color: var(--cor-branco);
     font-weight: 600;
-    transition: 0.3s;
-}
-
-.btn-primary:hover {
-    background: #2563eb;
-}
-
-.btn-outline {
-    border: 2px solid #3b82f6;
-    padding: 12px 25px;
-    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    }
+    nav a:hover {
+    color: var(--cor-primaria);
     text-decoration: none;
-    color: #3b82f6;
+    }
+    /* ===================================================
+    FORMULÁRIO
+    =================================================== */
+    form {
+    max-width: 600px;
+    }
+    label {
+    display: block; /* cada label ocupa linha própria */
     font-weight: 600;
-    transition: 0.3s;
-}
-
-.btn-outline:hover {
-    background: #3b82f6;
-    color: white;
-}
-
-/* ABOUT */
-.about {
-    padding: 100px 0;
+    margin-bottom: 0.25rem;
+    color: var(--cor-secundaria);
+    }
+    input, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #0f1d2e;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    font-family: var(--fonte-principal);
+    --cor-texto: #1b1b1b;
+    font-size: 1rem;
+    }
+    input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--cor-primaria);
+    box-shadow: 0 0 0 3px rgba(168, 20, 20, 0.2);
+    }
+    button[type='submit'] {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-branco);
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    }
+    button[type='submit']:hover {
+    background-color: var(--cor-primaria);
+    }
+    /* ===================================================
+    FOOTER
+    =================================================== */
+    footer {
+    background-color: var(--cor-secundaria);
+    color: #AEC6E8;
+    --cor-texto: #ffffff;
     text-align: center;
-}
+    padding: 2rem;
+    }
+    footer a { color: var(--cor-primaria); } footer ul { list-style: none; display:
+    flex; justify-content: center; gap: 1rem; margin-top: 0.5rem; }
 
-.about h2 {
-    margin-bottom: 50px;
-    font-size: 35px;
-}
+/* Menu sticky — fica fixo no topo ao rolar */
+header {
+    position: sticky;
+    top: 0; /* trava no topo */
+    z-index: 1000; /* fica na frente de outros elementos */
+    background-color: var(--cor-secundaria);
+    /* ... outros estilos já definidos na Aula 03 */}
 
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
+/* ===================================================
+HEADER COM FLEXBOX
+=================================================== */
+header {
+    display: flex;
+    justify-content: space-between; /* logo à esquerda, nav à direita */
+    align-items: center; /* alinhamento vertical centralizado */
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--cor-secundaria);
+    }
+    .header-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    }
+    nav ul {
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;}
 
-.card {
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 10px;
-    backdrop-filter: blur(10px);
-    transition: 0.3s;
-}
+/* ===================================================
+SEÇÃO SOBRE MIM — duas colunas com Flexbox
+=================================================== */
+.sobre-container {
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start;
+    gap: 2rem;
+    }
+    .foto-sobre {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--cor-primaria);
+    flex-shrink: 0; /* impede a foto de encolher */
+    }
+    .sobre-texto {
+    flex: 1; /* ocupa o espaço restante */}
 
-.card:hover {
-    transform: translateY(-5px);
-    background: rgba(59, 130, 246, 0.2);
-}
+/* ===================================================
+GRID DE PROJETOS — Flexbox com wrap
+=================================================== */
+#projetos {
+    background-color: var(--cor-fundo);
+    }
+    .projetos-grid {
+    display: flex;
+    flex-wrap: wrap; /* quebra linha quando não cabe */
+    gap: 1.5rem;
+    justify-content: flex-start;
+    }
+    .card-projeto {
+    flex: 0 0 280px; /* não cresce, não encolhe, base 280px */
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid #DDDDDD;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .card-projeto:hover {
+    transform: translateY(-4px); /* sobe levemente ao passar o mouse */
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);}
 
-/* MARKET */
-.market {
-    padding: 100px 0;
-    text-align: center;
-    background: #111827;
-}
-
-.market h2 {
-    font-size: 35px;
-    margin-bottom: 20px;
-}
-
-.salary {
-    font-size: 24px;
-    font-weight: 700;
-    color: #3b82f6;
-    margin-top: 20px;
-}
-
-/* CTA */
-.cta {
-    padding: 100px 0;
-    text-align: center;
-    background: linear-gradient(135deg, #1e293b, #0f172a);
-}
-
-.cta h2 {
-    margin-bottom: 30px;
-}
-
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #0b1120;
-    font-size: 14px;
-    color: #94a3b8;
-}
-
-/* RESPONSIVO */
+    /* ===================================================
+RESPONSIVIDADE — Mobile First
+max-width: 768px = telas menores que tablet
+=================================================== */
 @media (max-width: 768px) {
-    .hero-text h1 {
-        font-size: 35px;
+    /* Header empilha verticalmente */
+    header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
     }
-
-    .hero-buttons {
-        flex-direction: column;
+    /* Menu em coluna */
+    nav ul {
+    flex-direction: column;
+    gap: 0.25rem;
     }
-}
+    /* Sobre Mim: foto acima do texto */
+    .sobre-container {
+    flex-direction: column;
+    align-items: center;
+    }
+    /* Cards ocupam largura total */
+    .card-projeto {
+    flex: 1 1 100%;
+    }
+    /* Títulos menores */
+    h1 { font-size: 1.8rem; }
+    h2 { font-size: 1.4rem; }}
