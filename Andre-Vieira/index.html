@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfólio - André Vieira</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--=============== CABEÇALHO ================-->
+        <header>
+            <div class="header-container">
+                <img src="img/Andre.jpg" alt="Foto de [André]" width="100">
+                <div class="header-texto">
+                    <h1>
+                        André Vieira dos Santos
+                    </h1>
+                    <P><em>Estudante de Sistemas de Informação - CEUNI FAMETRO</em></P>
+
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#Sobre">Sobre Mim</a></li>
+                    <li><a href="#Projetos">Projetos</a></li> 
+                    <li><a href="#Formação">Formação</a></li>
+                    <li><a href="#Contato">Contato</a></li>   
+                </ul>
+            </nav>
+        </header>
+        <!--=============== CONTEÚDO PRINCIPAL ================-->
+        <main>
+            <!--Seção: sobre mim-->
+            <section id="Sobre">
+                 <h2>Sobre mim</h2>
+                 <div class="Sobre-container">
+                    <img src="img/Andre.jpg" alt="Foto de [Andre]" class="Foto-sobre">
+                 </div>
+                 <div class="Sobre-texto">
+               <p>Olá! Sou <strong> André</strong>, estudante de Sistemas de Informação.
+                  Tenho interesse em desenvolvimento web e criação de soluções digitais.</p>
+               <p>Cursando o <strong>5º período</strong> na CEUNI FAMETRO, Manaus - AM,
+                  desenvolvendo meu primeiro portfólio em <em>tecnologia web I</em>.</p>   
+               <h3>Minhas Habilidades</h3>   
+               <ul>
+                <li>HTML5 e CSS3</li>
+                <li>Lógica de Programção</li>
+                <Li>Git e GitHub</Li>
+                <li>Pacote Office</li>
+               </ul>
+               <h3>Formação Acadêmica</h3>
+               <ol>
+                <li>Ensino Médio - [Francisco Albuquerque], [2002]</li>
+                <li>Graduação em Sistemas de Informação - CEUNI FAMETRO (em andamento)</li>
+               </ol>
+               </div>
+            </section>
+            <!--Seção: Projetos-->
+            <section id="Projetos">
+              <h2>Projetos</h2>
+              <div class="projetos-grid">
+              <article class="card-projeto">
+                <img src="img/projeto1.jpg" alt="Screenshot do Projeto 1" width="300">
+                <h3>Inovatech 2024  Cidades Inteligentes</h3>
+                <p>Uso da tecnologia aplicada para melhorar a eficiência dos serviços públicos</p>
+                <a href="https://github.com/AndreVieiradosSantos/projeto1"
+                target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
+              </article>
+
+              <article class="card-projeto">
+                <img src="img/projeto2.jpg" alt="Screenshot do Projeto 2" width="300">
+                <h3>Inovatech 2025  Robótica Colaborativa e Acessibiladade</h3>
+                <p>Como os cobots e a inteligência artifical podem ser usados para criar soluções para pessoas com necessidades especiais</p>
+                <a href="https://github.com/AndreVieiradosSantos/projeto1"
+                target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
+              </article>
+              </div>
+            </section>
+            <!--Seção: Formação e Experiência-->
+            <section id="Formação">
+                <h2>Formação e Experiência</h2>
+                <h3>Acadêmica</h3>
+                <ul>
+                    <li><strong>Graduação em Sistemas de Informação</strong>
+                        - CEUNI FAMETRO<br>
+                        <small>2026 - Atual | Manaus - AM</small>
+                    </li>
+                    <li><strong>Ensino Médio</strong> [Franciso Albuquerque]<br>
+                    <small>[2002]</small></li>
+                </ul>
+                
+                    <h3>Cursos e Certifições</h3>
+                    <ul>
+                        <li>HTML e CSS - [Udemy, 2025]</li>
+                        <li>Lógica de Programação - [Fametro, 2024]</li>
+                    </ul>
+
+                
+            </section>
+            <!--Seção: Contato-->
+            <section id="Contato">
+                <h2>Entre em Contato</h2>
+                <p>Preencha o formulário e entrarei em contato em breve!</p>
+                <form action="#" method="post">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome"
+                    placeholder="Seu nome completo" required>
+
+                     <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email"
+                    placeholder="Seu@email.com" required>
+
+                     <label for="assunto">Assunto:</label>
+                    <input type="text" id="assunto" name="assunto"
+                    placeholder="Motivo do contato">
+
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5"
+                    placeholder="Sua mensagem aqui..." required></textarea>
+
+                    <button type="submit">Enviar Mensagem</button>
+
+                </form>
+            </section>
+            </main>
+            <!--================ RODAPÉ ================-->
+            <footer>
+                <p>&copy; 2026 André Vieira dos Santos. Todos os direitos reservados</p>
+                <ul>
+                    <li><a href="https://github.com/AndreVieiradosSantos"
+                           target=" _blank" rel="noopener noreferrer">GitHub</a></li>
+                    <li><a href="https://linkedin.com/in/andre-vieira-9b7a8b298"
+                           target=" _blank" rel="noopener noreferrer">Linkedin</a></li>
+
+                </ul>
+            </footer>
+        
+    </body>
+</html>
